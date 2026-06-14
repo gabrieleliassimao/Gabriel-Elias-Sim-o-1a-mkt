@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgroTech 2077: O Futuro do Campo e do MST</title>
+    
+    <!-- Fontes Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Link para o CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navegação -->
+    <header>
+        <div class="logo">
+            <span style="font-size: 2rem;">❖</span> AGRINHO 2077
+        </div>
+        <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
+        <nav id="navbar">
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#mst-tec">MST & Tecnologia</a></li>
+                <li><a href="#inovacao">Inovações</a></li>
+                <li><a href="#sustentabilidade">Sustentabilidade</a></li>
+                <li><a href="#linha-tempo">Evolução</a></li>
+                <li><a href="#simulador">Simulador</a></li>
+                <li><a href="#faq">Dúvidas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <canvas id="hero-canvas"></canvas>
+        <div class="hero-content">
+            <h1>O FUTURO DO CAMPO É<br>TECNOLÓGICO E HUMANO</h1>
+            <p>Unindo a força da Reforma Agrária com a revolução da Agricultura 4.0. Soberania alimentar através da inovação digital, inclusão social e sustentabilidade radical.</p>
+            <div style="margin-top: 20px; font-size: 0.9rem; color: var(--neon-blue);">
+                STATUS DO SISTEMA: ONLINE | AGRICULTURA 4.0
+            </div>
+            <a href="#mst-tec" class="btn-cta">Iniciar Leitura</a>
+        </div>
+        <a href="#mst-tec" class="scroll-down">↓</a>
+    </section>
+
+    <!-- Seção 1: MST e Tecnologia (Expandido) -->
+    <section id="mst-tec" class="mst-section">
+        <h2 class="section-title">Reforma Agrária Digital</h2>
+        
+        <div class="split-layout reveal">
+            <div class="split-text">
+                <h3 style="color: var(--neon-blue); margin-bottom: 1rem; font-family: var(--font-display); font-size: 1.8rem;">A Ciência a Serviço do Povo</h3>
+                <p style="margin-bottom: 1rem;">
+                    O MST (Movimento dos Trabalhadores Rurais Sem Terra) não apenas aceita a tecnologia; ela a recria. Através de parcerias com universidades (como a ITCPs - Incubadoras Tecnológicas de Cooperativas Populares), assentamentos desenvolvem soluções que fogem da lógica do lucro excessivo.
+                </p>
+                <p style="margin-bottom: 1rem;">
+                    <strong class="highlight-text">Agroecologia 4.0:</strong> É o conceito central. Não usamos transgênicos dependentes de veneno, mas sim biotecnologia avançada para criar sementes crioulas mais fortes, capazes de resistir às mudanças climáticas sem destruir o solo.
+                </p>
+                <p>
+                    A tecnologia garante <strong>Soberania Alimentar</strong>: produzir comida de verdade, sem agrotóxicos, barata e saudável para a população brasileira, garantendo que o campo seja um lugar de vida e dignidade.
+                </p>
+            </div>
+            <div class="split-image">
+                <div class="tech-image-placeholder">
+                    <img src="https://picsum.photos/seed/agrofamily/600/400" alt="Cooperativa tecnológica">
+                    <div style="position: absolute; bottom: 0; left: 0; width: 100%; padding: 10px; background: rgba(0,0,0,0.7); font-family: var(--font-display); font-size: 0.8rem;">
+                        COOPERATIVISMO TECNOLÓGICO
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cards de Destaque sobre MST -->
+        <div class="card-grid tools-grid reveal" style="margin-top: 4rem;">
+            <article class="glass-card">
+                <div class="icon-box">🎓</div>
+                <h3>Educação do Campo</h3>
+                <p>Escolas nos assentamentos que ensinam robótica, programação e gestão cooperativa. Formar jovens camponeses conectados com o mundo.</p>
+            </article>
+            <article class="glass-card">
+                <div class="icon-box">🌱</div>
+                <h3>Biofábricas</h3>
+                <p>Produção local de insumos agrícolas e defensivos biológicos. O agricultor deixa de comprar veneno e passa a fabricar vida.</p>
+            </article>
+            <article class="glass-card">
+                <div class="icon-box">🏠</div>
+                <h3>Agricultura Urbana</h3>
+                <p>Uso de tecnologias de cultivo vertical e hidroponia em periferias urbanas, levando alimentos frescos para quem vive longe do campo.</p>
+            </article>
+        </div>
+    </section>
+
+    <!-- Seção 2: Inovações (Expandido) -->
+    <section id="inovacao">
+        <h2 class="section-title">Tecnologias do Agro & MST</h2>
+        
+        <div class="card-grid tools-grid reveal">
+            <!-- Card 1 -->
+            <article class="glass-card">
+                <div class="icon-box">🛸</div>
+                <h3>Agricultura de Precisão</h3>
+                <p>O uso de <strong>AGVs</strong> (Veículos Autônomos Guiados) permite colher 24h por dia. Nos assentamentos, drones menores e mais baratos monitoram a saúde das plantas.</p>
+            </article>
+
+            <!-- Card 2 -->
+            <article class="glass-card">
+                <div class="icon-box">📡</div>
+                <h3>IoT no Solo (Sensores)</h3>
+                <p>Redes de sensores que mandam dados para o celular do agricultor sobre umidade, temperatura e pH. Elimina o "chute" e garante a ciência na decisão.</p>
+            </article>
+
+            <!-- Card 3 -->
+            <article class="glass-card">
+                <div class="icon-box">🧬</div>
+                <h3>Genética Crioula</h3>
+                <p>Bancos de sementes digitais. Cada planta tem seu DNA e histórico catalogado em aplicativos, garantindo a pureza genética das espécies nativas.</p>
+            </article>
+
+            <!-- Card 4 -->
+            <article class="glass-card">
+                <div class="icon-box">⛓️</div>
+                <h3>Blockchain & Comércio Justo</h3>
+                <p>Tecnologia de registros imutáveis. O consumidor escaneia o alimento e vê exatamente em qual assentamento ele nasceu, garantindo preço justo ao produtor.</p>
+            </article>
+
+            <!-- Card 5 -->
+            <article class="glass-card">
+                <div class="icon-box">🤖</div>
+                <h3>Big Data na Previsão</h3>
+                <p>Análise de dados climáticos de décadas passadas para prever chuvas e secas. Proteção contra intempéries para pequenos e grandes produtores.</p>
+            </article>
+
+            <!-- Card 6 -->
+            <article class="glass-card">
+                <div class="icon-box">☀️</div>
+                <h3>Energia Solar Compartilhada</h3>
+                <p>Usinas solares comunitárias em assentamentos. A energia gerada irriga as lavouras e o excedente é vendido, gerando renda extra para a cooperativa.</p>
+            </article>
+            
+            <!-- Card 7 (Novo) -->
+            <article class="glass-card">
+                <div class="icon-box">🚜</div>
+                <h3>Máquinas 3D Impressas</h3>
+                <p>Fabricação de peças de reposição para tratores e implementos via impressão 3D dentro da própria comunidade, reduzindo custos de manutenção.</p>
+            </article>
+
+            <!-- Card 8 (Novo) -->
+            <article class="glass-card">
+                <div class="icon-box">📱</div>
+                <h3>Apps de Gestão Cooperativa</h3>
+                <p>Sistemas integrados para gestão financeira, controle de estoque e divisão de lucros entre cooperados, garantindo transparência total.</p>
+            </article>
+        </div>
+    </section>
+
+    <!-- Seção 3: Sustentabilidade (Nova) -->
+    <section id="sustentabilidade" class="mst-section">
+        <h2 class="section-title">Sustentabilidade & Meio Ambiente</h2>
+        <div class="split-layout reveal">
+            <div class="split-text">
+                <p style="margin-bottom: 1rem;">
+                    O modelo atual de agronegócio explorador esgota o solo e contém as águas. O futuro proposto pelo Agrinho é o da <strong>Regeneração</strong>. Tecnologia não serve para destruir a natureza mais rápido, mas para curá-la.
+                </p>
+                <ul style="list-style: none; margin-top: 1rem;">
+                    <li style="margin-bottom: 10px; display: flex; align-items: center; gap: 10px;">
+                        <span style="color: var(--neon-blue);">✓</span> <strong>Recuperação de Nascentes:</strong> Uso de drones para identificar vazamentos e áreas de erosão.
+                    </li>
+                    <li style="margin-bottom: 10px; display: flex; align-items: center; gap: 10px;">
+                        <span style="color: var(--neon-blue);">✓</span> <strong>Sequestro de Carbono:</strong> Plantio de florestas com monitoramento via satélite (INPE).
+                    </li>
+                    <li style="margin-bottom: 10px; display: flex; align-items: center; gap: 10px;">
+                        <span style="color: var(--neon-blue);">✓</span> <strong>Agroflorestas Digitais:</strong> Sistemas complexos de cultivo gerenciados por IA para maximizar a biodiversidade.
+                    </li>
+                </ul>
+            </div>
+            <div class="split-image">
+                <div class="tech-image-placeholder">
+                    <img src="https://picsum.photos/seed/naturetech/600/400" alt="Tecnologia sustentável">
+                    <div style="position: absolute; bottom: 0; left: 0; width: 100%; padding: 10px; background: rgba(0,0,0,0.7); font-family: var(--font-display); font-size: 0.8rem;">
+                        ECONOMIA CIRCULAR
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção 4: Linha do Tempo (Nova) -->
+    <section id="linha-tempo">
+        <h2 class="section-title">Evolução Histórica</h2>
+        <div class="timeline-container reveal">
+            <div class="timeline-item">
+                <div class="timeline-content glass-card">
+                    <span class="year">1960-1980</span>
+                    <h3>Revolução Verde</h3>
+                    <p>Introdução de máquinas pesadas e agroquímicos. Aumento de produtividade, mas início da degradação ambiental e êxodo rural.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content glass-card">
+                    <span class="year">1984</span>
+                    <h3>Fundação do MST</h3>
+                    <p>O Movimento surge lutando por terra e direitos. Início do resgate de sementes crioulas e resistência ao modelo dominante.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content glass-card">
+                    <span class="year">2000-2010</span>
+                    <h3>Agroecologia</h3>
+                    <p>Conscientização sobre venenos. O MST se torna referência mundial em produção orgânica sem agrotóxicos.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content glass-card">
+                    <span class="year">2020 - Hoje</span>
+                    <h3>Agricultura 4.0 & Inclusão</h3>
+                    <p>Drones, IA e cooperativismo digital. A tecnologia chega para auxiliar a agricultura familiar e garantir soberania alimentar.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção 5: Simulador Interativo -->
+    <section id="simulador" style="background: radial-gradient(circle, #0d1b2e 0%, var(--deep-blue) 100%);">
+        <h2 class="section-title">Simulador de Eficiência Hídrica</h2>
+        <p style="text-align: center; margin-bottom: 2rem; color: var(--text-muted); max-width: 800px; margin-left: auto; margin-right: auto;">
+            Veja como a tecnologia de irrigação inteligente pode economizar recursos vitais para o seu cultivo.
+        </p>
+
+        <div class="calculator-container reveal">
+            <h3>CALCULADORA AGRO 4.0</h3>
+            
+            <div class="form-group">
+                <label for="area">Tamanho da Área (Hectares):</label>
+                <input type="number" id="area" placeholder="Ex: 50">
+            </div>
+
+            <div class="form-group">
+                <label for="sistema">Sistema de Irrigação Atual:</label>
+                <select id="sistema">
+                    <option value="1.0">Aspersão Convencional (Alto desperdício)</option>
+                    <option value="0.75">Gotejamento Básico</option>
+                    <option value="0.5">Pivô Central</option>
+                    <option value="0.3">Irrigação Inteligente + IoT (Futuro)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="investimento">Investimento Disponível (R$):</label>
+                <input type="number" id="investimento" placeholder="Ex: 15000">
+            </div>
+
+            <button class="calc-btn" onclick="calcularEficiencia()">Processar Dados</button>
+
+            <div id="resultado" class="result-box">
+                <h4>Relatório de Sustentabilidade:</h4>
+                <p>💧 Água economizada por ano: <span id="agua-economizada" style="color: var(--neon-blue); font-weight: bold;">0</span> Litros.</p>
+                <p>🌍 Pegada hídrica reduzida em: <span id="impacto" style="color: var(--neon-purple); font-weight: bold;">0</span>%</p>
+                <p style="font-size: 0.9rem; margin-top: 10px; color: var(--text-muted);">*Cálculo baseado em média de precipitação e evapotranspiração da região Sul.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção 6: FAQ (Nova) -->
+    <section id="faq">
+        <h2 class="section-title">Perguntas Frequentes</h2>
+        <div class="faq-container reveal">
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFaq(this)">
+                    Tecnologia não vai substituir os trabalhadores?
+                    <span>+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Pelo contrário. No MST e na agricultura familiar, a tecnologia serve para reduzir o esforço físico braçal (penoso) e permitir que o trabalhador foque na gestão, na qualidade e no processamento dos alimentos, criando mais valor para o produto.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFaq(this)">
+                    Como os assentamentos pagam por essa tecnologia?
+                    <span>+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Através de convênios com universidades, editais públicos do governo (como Pronaf e Fomento) e pelo fortalecimento das cooperativas. O lucro da venda coletiva é reinvestido em tecnologia para o grupo.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFaq(this)">
+                    O que é Soberania Alimentar?
+                    <span>+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>É a capacidade de um país (ou povo) produzir seu próprio alimento, sem depender de importações. A tecnologia garante que produzamos comida saudável suficiente para todos os brasileiros.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="footer-content">
+            <div class="logo">AGRINHO 2077</div>
+            <p style="color: var(--text-muted); max-width: 600px;">
+                Um projeto educativo voltado para mostrar que o futuro do agronegócio e a luta pela terra podem caminhar juntos através da ciência, da tecnologia e da justiça social.
+            </p>
+            <div class="footer-links">
+                <a href="#home">Início</a>
+                <a href="#inovacao">Inovações</a>
+                <a href="#faq">Dúvidas</a>
+            </div>
+        </div>
+        <p class="copyright">&copy; 2023 Projeto Educacional Agrinho. Tecnologia e Campo.</p>
+    </footer>
+
+    <!-- Link para o JS -->
+    <script src="script.js"></script>
+</body>
+</html>
